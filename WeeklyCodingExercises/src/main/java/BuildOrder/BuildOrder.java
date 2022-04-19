@@ -71,7 +71,7 @@ public class BuildOrder {
         System.out.println();
     }
 
-    //recursive method to check for dependency conflicts (i.e. this is dependent on a project that is dependent on this)
+    //recursive method to check for dependency conflicts
     public boolean hasDependency(Project dependent, List<Project> dependencies) {
         if (dependencies == null) return false;
         if (dependencies.contains(dependent)) return true;
